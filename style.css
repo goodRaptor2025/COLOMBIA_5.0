@@ -1,0 +1,244 @@
+/* VARIABLES GLOBALES */
+:root {
+    --purple-main: #7B1FA2;
+    --purple-dark: #4A148C;
+    --neon-green: #00E676;
+    --white: #ffffff;
+    --bg-light: #f9f9f9;
+    --text-dark: #2c3e50;
+    --text-gray: #7f8c8d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+/* NAVEGACIÓN */
+header {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    padding: 15px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--neon-green);
+}
+
+.lang-btn {
+    background-color: var(--neon-green);
+    color: var(--purple-dark);
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: var(--white);
+    transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #6a1b9a, #4a148c);
+    color: var(--white);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: var(--neon-green);
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero .intro {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.hero .badge {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--neon-green);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* CONTENEDORES */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--purple-dark);
+    margin-bottom: 40px;
+    border-left: 5px solid var(--neon-green);
+    padding-left: 15px;
+}
+
+/* CONFERENCIAS */
+.conference-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.conf-header h3 {
+    color: var(--purple-main);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.speaker, .topic {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.conf-body {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.conf-body h4 {
+    margin-bottom: 10px;
+    color: var(--purple-dark);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* TABLA GLOSARIO */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+th {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* REFLEXIÓN ÉTICA */
+.ethics-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    border-top: 4px solid var(--purple-dark);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.ethics-card h3 {
+    color: var(--purple-dark);
+    margin-bottom: 15px;
+}
+
+.ethics-card p {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    color: #999;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 0 8px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* COMPORTAMIENTO IDIOMA MULTILINGÜE */
+[lang="en"] { display: none; }
+.lang-en { display: none; }
