@@ -1,175 +1,165 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia 5.0 - MinTIC & SENA</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colombia 5.0 - Game UI Systems</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">Colombia 5.0 | SENA</div>
-        <nav>
-            <a href="#inicio" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a>
-            <a href="#etica" class="nav-link" data-es="Ética" data-en="Ethics">Ética</a>
-            <a href="#conferencias" class="nav-link" data-es="Conferencias" data-en="Conferences">Conferencias</a>
-            <a href="#glosario" class="nav-link" data-es="Glosario" data-en="Glossary">Glosario</a>
-        </nav>
-        <button class="lang-btn" onclick="toggleLanguage()">English</button>
-    </header>
+  <!-- PORTADA -->
+  <header class="hero">
+    <div class="overlay">
+      <img src="img/logo.png" alt="Colombia 5.0" class="logo">
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Colombia <span>5.0</span></h1>
-            
-            <div class="lang-es">
-                <p class="subtitle">Acceso, soberanía y productividad</p>
-                <p class="intro"><strong>Objetivo del sitio:</strong> Difundir las memorias y el material multimedia del encuentro de ecosistemas digitales Colombia 5.0, evaluando el impacto de las interfaces de usuario y la infraestructura tecnológica en 2026.</p>
-                <span class="badge">SENA - Actividad Académica</span>
-            </div>
+      <h1>GAME UI SYSTEMS</h1>
+      <h2>De pantallas bonitas a interfaces que funcionan</h2>
 
-            <div class="lang-en">
-                <p class="subtitle">Access, sovereignty, and productivity</p>
-                <p class="intro"><strong>Site Objective:</strong> To broadcast the memories and multimedia material of the Colombia 5.0 digital ecosystem gathering, evaluating the impact of user interfaces and technological infrastructure in 2026.</p>
-                <span class="badge">SENA - Academic Activity</span>
-            </div>
-        </div>
-    </section>
+      <p>
+        Taller práctico para construir una base reutilizable de UI para videojuegos en Figma.
+      </p>
 
-    <section id="etica" class="container">
-        <h2 class="section-title" data-es="Conclusión y Reflexión Ética" data-en="Conclusion & Ethical Reflection">Conclusión y Reflexión Ética</h2>
-        <div class="ethics-card">
-            <div class="lang-es">
-                <h3>¿Cómo se implementa la ética en la tecnología empresarial?</h3>
-                <p>El desarrollo tecnológico de <strong>Colombia 5.0 hacia el 2026</strong> plantea un dilema ineludible: el progreso industrial y la automatización no pueden ocurrir a expensas de los derechos humanos fundamentales. La adopción corporativa de la <strong>Inteligencia Artificial</strong> y el procesamiento masivo de datos imponen la necesidad de diseñar políticas claras de gobernanza digital.</p>
-                <p>Las organizaciones del país deben estructurar sus sistemas bajo principios éticos sólidos de transparencia algorítmica y mitigación de sesgos. El <strong>uso responsable de datos</strong> debe ser el pilar central de cualquier software corporativo, garantizando la privacidad por diseño. Como futuros profesionales en desarrollo de software formados por el SENA, nuestra responsabilidad ética radica en programar sistemas que no vulneren la equidad laboral, que protejan la información de los usuarios y que utilicen la automatización como un mecanismo de potenciación del talento humano, asegurando que la tecnología siempre se mantenga al servicio del bienestar de la sociedad.</p>
-            </div>
-            <div class="lang-en">
-                <h3>How is ethics implemented in business technology?</h3>
-                <p>The technological development of <strong>Colombia 5.0 towards 2026</strong> raises an inescapable dilemma: industrial progress and automation cannot occur at the expense of fundamental human rights. Corporate adoption of <strong>Artificial Intelligence</strong> and massive data processing impose the need to structure clear digital governance policies.</p>
-                <p>Organizations across the nation must build their systems under robust ethical principles of algorithmic transparency and bias mitigation. The <strong>responsible use of data</strong> must be the central pillar of any corporate software, guaranteeing privacy by design. As future software development professionals trained by SENA, our ethical responsibility lies in programming systems that do not compromise labor equity, that protect user information, and that leverage automation as a mechanism to boost human talent, ensuring technology always remains at the service of social well-being.</p>
-            </div>
-        </div>
-    </section>
+      <a href="#contenido" class="btn">Explorar</a>
+    </div>
+  </header>
 
-    <section id="conferencias" class="container">
-        <h2 class="section-title" data-es="Conferencias y Talleres" data-en="Conferences & Workshops">Conferencias y Talleres</h2>
-        
-        <div class="conference-card">
-            <div class="conf-header">
-                <h3 class="lang-es">Conferencia 1: Game UI Systems: De pantallas bonitas a interfaces que funcionan</h3>
-                <h3 class="lang-en">Conference 1: Game UI Systems: From Pretty Screens to Interfaces that Work</h3>
-                <p class="speaker"><strong>Conferencista / Speaker:</strong> Andrés Felipe Pisso Tobar (Lead UX Designer - Teravision Games)</p>
-                <p class="topic"><strong data-es="Tema principal:" data-en="Main Topic:">Tema principal:</strong> Taller práctico para construir una base reutilizable de UI para videojuegos en Figma.</p>
-            </div>
-            <div class="conf-body">
-                <div class="lang-es">
-                    <h4>Resumen y Reflexión:</h4>
-                    <p>En este taller práctico del evento Colombia 5.0 se analizó profundamente el diseño de sistemas de interfaz de usuario (UI) en la industria de videojuegos. El exponente enfatizó que una interfaz exitosa no solo debe ser estéticamente atractiva, sino técnicamente funcional, intuitiva y escalable. Se exploró la creación de componentes reutilizables en Figma, permitiendo optimizar los flujos de trabajo de desarrollo y garantizar una experiencia de usuario (UX) óptima dentro del ecosistema interactivo digital.</p>
-                    <p><strong>Palabras clave:</strong> Game UI, Figma, Interfaces Funcionales, Teravision Games, Componentes Reutilizables, Diseño UX.</p>
-                </div>
-                <div class="lang-en">
-                    <h4>Summary and Reflection:</h4>
-                    <p>In this hands-on workshop at the Colombia 5.0 event, the design of User Interface (UI) systems in the gaming industry was thoroughly analyzed. The speaker emphasized that a successful interface must not only be aesthetically pleasing, but technically functional, intuitive, and scalable. The creation of reusable components in Figma was explored, allowing the optimization of development workflows and guaranteeing an optimal user experience (UX) within the interactive digital ecosystem.</p>
-                    <p><strong>Keywords:</strong> Game UI, Figma, Functional Interfaces, Teravision Games, Reusable Components, UX Design.</p>
-                </div>
-                
-                <div class="media-container" style="margin-top: 20px;">
-                    <h4 style="margin-bottom: 10px;" data-es="Evidencia en Video y Fotos:" data-en="Video and Photo Evidence:">Evidencia en Video y Fotos:</h4>
-                    <div class="video-holder">
-                        <video controls preload="metadata" style="width: 100%; max-height: 400px; border-radius: 6px; background-color: #000;">
-                            <source src="WhatsApp-Video-2026-05-19.mp4" type="video/mp4">
-                            <p>Tu navegador no soporta reproducción de video HTML5. Puedes descargar el archivo multimedia de forma externa.</p>
-                        </video>
-                    </div>
-                    <div class="gallery">
-                        <img src="WhatsApp-Image-2026-05-19-1.jpeg" alt="Conferencista Andrés Felipe Pisso Tobar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500';">
-                        <img src="WhatsApp-Image-2026-05-19-2.jpeg" alt="Pantalla de Presentación Game UI Systems" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500';">
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- MENÚ -->
+  <nav>
+    <ul>
+      <li><a href="#contenido">Inicio</a></li>
+      <li><a href="#imagenes">Galería</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#glosario">Glosario</a></li>
+      <li><a href="#etica">Reflexión Ética</a></li>
+    </ul>
+  </nav>
 
-        <div class="conference-card">
-            <div class="conf-header">
-                <h3 class="lang-es">Conferencia 2: Infraestructura Tecnológica y Soberanía de Datos</h3>
-                <h3 class="lang-en">Conference 2: Technological Infrastructure and Data Sovereignty</h3>
-                <p class="speaker"><strong>Conferencista / Speaker:</strong> Representante MinTIC / Colombia 5.0</p>
-                <p class="topic"><strong data-es="Tema principal:" data-en="Main Topic:">Tema principal:</strong> Despliegue seguro de software en ecosistemas locales.</p>
-            </div>
-            <div class="conf-body">
-                <div class="lang-es">
-                    <h4>Resumen y Reflexión:</h4>
-                    <p>Sesión orientada a la gobernanza y protección de los datos en el desarrollo de software corporativo en Colombia, garantizando que el almacenamiento y procesamiento cumpla con las normativas de soberanía vigentes para el año 2026.</p>
-                    <p><strong>Palabras clave:</strong> Soberanía de datos, Computación Cloud, Seguridad de Información, MinTIC.</p>
-                </div>
-                <div class="lang-en">
-                    <h4>Summary and Reflection:</h4>
-                    <p>Session oriented to governance and data protection in corporate software development in Colombia, ensuring that storage and processing comply with sovereignty regulations in force for the year 2026.</p>
-                    <p><strong>Keywords:</strong> Data Sovereignty, Cloud Computing, Information Security, MinTIC.</p>
-                </div>
-                <div class="media-container" style="margin-top: 20px;">
-                    <div class="gallery">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Data Center">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500" alt="Global Network">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CONTENIDO -->
+  <section id="contenido" class="section">
+    <h2>¿Qué es Colombia 5.0?</h2>
 
-    <section id="glosario" class="container">
-        <h2 class="section-title" data-es="Glosario Técnico (Glossary)" data-en="Technical Glossary">Glosario Técnico (Glossary)</h2>
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Inglés (English)</th>
-                        <th>Español (Spanish)</th>
-                        <th data-es="Definición" data-en="Definition">Definición</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>UI (User Interface)</td><td>Interfaz de Usuario</td><td>Conjunto de elementos visuales y pantallas con los que el usuario interactúa en un software o juego.</td></tr>
-                    <tr><td>UX (User Experience)</td><td>Experiencia de Usuario</td><td>Facilidad de uso, intuición y nivel de satisfacción que experimenta una persona al usar un sistema.</td></tr>
-                    <tr><td>Reusable Component</td><td>Componente Reutilizable</td><td>Bloque de código o diseño creado una vez que se puede implementar múltiples veces en el proyecto.</td></tr>
-                    <tr><td>Figma</td><td>Figma</td><td>Herramienta colaborativa de diseño web y de interfaces para prototipar sistemas digitales.</td></tr>
-                    <tr><td>Cloud Computing</td><td>Computación en la nube</td><td>Servicios y recursos informáticos distribuidos bajo demanda a través de internet.</td></tr>
-                    <tr><td>Data Sovereignty</td><td>Soberanía de Datos</td><td>Concepto digital donde los datos están sujetos a las leyes del país donde se generan.</td></tr>
-                    <tr><td>Artificial Intelligence</td><td>Inteligencia Artificial</td><td>Sistemas y algoritmos informáticos diseñados para simular capacidades cognitivas humanas.</td></tr>
-                    <tr><td>Machine Learning</td><td>Aprendizaje Automático</td><td>Subcampo de la IA que permite que un software aprenda patrones automáticamente a partir de datos.</td></tr>
-                    <tr><td>Automation</td><td>Automatización</td><td>Uso de sistemas o scripts para ejecutar procesos operativos con mínima intervención humana.</td></tr>
-                    <tr><td>Cybersecurity</td><td>Ciberseguridad</td><td>Prácticas de seguridad orientadas a proteger redes, servidores y datos contra ataques maliciosos.</td></tr>
-                    <tr><td>Framework</td><td>Marco de Trabajo</td><td>Estructura de software estandarizada que sirve como base para acelerar el desarrollo.</td></tr>
-                    <tr><td>Responsive Design</td><td>Diseño Adaptable</td><td>Técnica de desarrollo web que adapta la visualización del sitio a cualquier tamaño de pantalla.</td></tr>
-                    <tr><td>Backend</td><td>Lado del Servidor</td><td>Capa interna del software encargada de procesar datos, lógica de negocio y bases de datos.</td></tr>
-                    <tr><td>Frontend</td><td>Lado del Cliente</td><td>Parte visual y de interacción directa del sitio web renderizada por el navegador.</td></tr>
-                    <tr><td>Repository</td><td>Repositorio</td><td>Lugar de almacenamiento digital (como GitHub) donde se gestiona el código fuente.</td></tr>
-                    <tr><td>Big Data</td><td>Grandes Volúmenes de Datos</td><td>Conjuntos de datos masivos que superan las capacidades de las bases de datos tradicionales.</td></tr>
-                    <tr><td>Data Bias</td><td>Sesgo de Datos</td><td>Distorsión u error sistemático en los datos que genera resultados discriminatorios o inexactos.</td></tr>
-                    <tr><td>API</td><td>Interfaz de Programación</td><td>Protocolo que permite la comunicación e intercambio de datos entre dos aplicaciones de software.</td></tr>
-                    <tr><td>Algorithm</td><td>Algoritmo</td><td>Conjunto finito y ordenado de instrucciones lógicas para solucionar un problema.</td></tr>
-                    <tr><td>Scalability</td><td>Escalabilidad</td><td>Capacidad de un sistema de software para manejar un crecimiento continuo de trabajo sin perder rendimiento.</td></tr>
-                    <tr><td>Deployment</td><td>Despliegue</td><td>Proceso de transferir el software terminado hacia un servidor de producción accesible para los usuarios.</td></tr>
-                    <tr><td>Blockchain</td><td>Cadena de Bloques</td><td>Tecnología de registro distribuido y criptográfico que asegura la inmutabilidad de los datos.</td></tr>
-                    <tr><td>IoT (Internet of Things)</td><td>Internet de las Cosas</td><td>Red de objetos físicos cotidianos integrados con sensores y software conectados a internet.</td></tr>
-                    <tr><td>Open Source</td><td>Código Abierto</td><td>Software licenciado públicamente para que cualquiera pueda inspeccionar, modificar o mejorar su código.</td></tr>
-                    <tr><td>Version Control</td><td>Control de Versiones</td><td>Herramienta (como Git) que registra los cambios históricos sobre los archivos de código fuente.</td></tr>
-                    <tr><td>Database</td><td>Base de Datos</td><td>Sistema electrónico organizado para almacenar, consultar y administrar información eficientemente.</td></tr>
-                    <tr><td>Privacy Policy</td><td>Política de Privacidad</td><td>Cláusula legal que explica detalladamente cómo una organización recopila y usa los datos de usuario.</td></tr>
-                    <tr><td>Encryption</td><td>Cifrado</td><td>Algoritmo que transforma datos legibles en un formato seguro inteligible solo con una clave.</td></tr>
-                    <tr><td>Bandwidth</td><td>Ancho de Banda</td><td>Capacidad máxima de transferencia de datos permitida por un canal de comunicación en red.</td></tr>
-                    <tr><td>SaaS</td><td>Software como Servicio</td><td>Modelo de entrega de aplicaciones donde el software está alojado por completo en la nube.</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <p>
+      Colombia 5.0 es un evento tecnológico enfocado en innovación,
+      desarrollo digital y transformación tecnológica en Colombia.
+    </p>
 
-    <footer>
-        <p>© 2026 Colombia 5.0 - Evidencia Académica SENA. Centro de Manufactura en Textil y Cuero - Regional Distrito Capital.</p>
-    </footer>
+    <p>
+      En esta conferencia se presentó el tema
+      <strong>Game UI Systems</strong>, donde se explicó cómo diseñar
+      interfaces funcionales para videojuegos.
+    </p>
 
-    <script src="js/script.js"></script>
+    <!-- BILINGÜISMO -->
+    <div class="bilingue">
+      <h3>Versión en Inglés / English Version</h3>
+
+      <p>
+        Colombia 5.0 is a technology event focused on innovation,
+        digital transformation, and software development.
+      </p>
+
+      <p>
+        The conference “Game UI Systems” explained how to create
+        reusable and functional interfaces for video games using Figma.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="imagenes" class="section">
+    <h2>Galería de Imágenes</h2>
+
+    <div class="galeria">
+
+      <img src="img/conferencia1.jpeg" alt="Conferencia Colombia 5.0">
+
+      <img src="img/conferencia 2.jpeg" alt="Ponente Colombia 5.0">
+
+      <img src="img/image.png" alt="Logo Colombia 5.0">
+
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="section">
+    <h2>Video del Evento</h2>
+
+    <video controls>
+      <source src="video/evento.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+  </section>
+
+  <!-- GLOSARIO -->
+  <section id="glosario" class="section">
+    <h2>Glosario (30 palabras)</h2>
+
+    <div class="grid">
+
+      <div class="card">1. Interface - Interfaz</div>
+      <div class="card">2. Game - Juego</div>
+      <div class="card">3. Design - Diseño</div>
+      <div class="card">4. User - Usuario</div>
+      <div class="card">5. Layout - Distribución</div>
+      <div class="card">6. Software - Software</div>
+      <div class="card">7. Hardware - Hardware</div>
+      <div class="card">8. Animation - Animación</div>
+      <div class="card">9. Prototype - Prototipo</div>
+      <div class="card">10. System - Sistema</div>
+      <div class="card">11. Screen - Pantalla</div>
+      <div class="card">12. Button - Botón</div>
+      <div class="card">13. Menu - Menú</div>
+      <div class="card">14. Code - Código</div>
+      <div class="card">15. Developer - Desarrollador</div>
+      <div class="card">16. Website - Sitio web</div>
+      <div class="card">17. Network - Red</div>
+      <div class="card">18. Database - Base de datos</div>
+      <div class="card">19. Cybersecurity - Ciberseguridad</div>
+      <div class="card">20. Application - Aplicación</div>
+      <div class="card">21. Technology - Tecnología</div>
+      <div class="card">22. Digital - Digital</div>
+      <div class="card">23. Innovation - Innovación</div>
+      <div class="card">24. Platform - Plataforma</div>
+      <div class="card">25. Mobile - Móvil</div>
+      <div class="card">26. Internet - Internet</div>
+      <div class="card">27. Server - Servidor</div>
+      <div class="card">28. Cloud - Nube</div>
+      <div class="card">29. Programming - Programación</div>
+      <div class="card">30. Experience - Experiencia</div>
+
+    </div>
+  </section>
+
+  <!-- REFLEXIÓN ÉTICA -->
+  <section id="etica" class="section">
+    <h2>Reflexión Ética</h2>
+
+    <p>
+      La tecnología y el diseño digital deben utilizarse de manera
+      responsable y ética. Los desarrolladores tienen la obligación
+      de crear plataformas accesibles, inclusivas y seguras para
+      todos los usuarios.
+    </p>
+
+    <p>
+      Además, el uso de videojuegos y sistemas digitales debe
+      promover experiencias positivas y educativas, evitando
+      contenidos dañinos o discriminatorios.
+    </p>
+
+    <p>
+      También es importante proteger la privacidad de los usuarios
+      y garantizar el buen manejo de los datos personales.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p> Colombia 5.0 © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

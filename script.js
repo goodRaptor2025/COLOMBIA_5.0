@@ -1,31 +1,21 @@
-let currentLang = 'es';
-
-function toggleLanguage() {
-    const btn = document.querySelector('.lang-btn');
-    
-    if (currentLang === 'es') {
-        document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
-        
-        document.querySelectorAll('[data-en]').forEach(el => {
-            el.textContent = el.getAttribute('data-en');
-        });
-
-        btn.textContent = 'Español';
-        currentLang = 'en';
-    } else {
-        document.querySelectorAll('.lang-es').forEach(el => el.style.display = 'block');
-        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
-        
-        document.querySelectorAll('[data-es]').forEach(el => {
-            el.textContent = el.getAttribute('data-es');
-        });
-
-        btn.textContent = 'English';
-        currentLang = 'es';
-    }
-}
+// script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+
+  console.log("Página Colombia 5.0 cargada correctamente");
+
+  // Animación sencilla
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card, index) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+      card.style.transition = "0.5s";
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }, index * 100);
+  });
+
 });
